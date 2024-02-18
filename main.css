@@ -1,0 +1,70 @@
+
+
+body{
+    font-family: monospace;
+    
+}
+
+ul{
+    font-family: Helvetica;
+}
+
+li{
+    list-style: circle;
+}
+
+.list{
+    list-style: square;
+}
+
+/*atributo personalizado*/
+
+
+/*ADICIONANDO TEMA*/
+
+/*O que é Root: representa o elemento htML; define variaveis de cor anexada na raiz da pagina */
+
+:root{
+    --pink: #ff00f2;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+.light-theme{
+    --bg: var(--pink);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+.dark-theme{
+    --bg: var(--black);
+    --fontColor: var(--pink);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+
+*{
+    color: var(--fontColor);
+    font-family: Helvetica;
+    
+}
+
+body{
+    background: var(--bg);
+}
+
+.btn{
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+}
+/*pseudoclasse*/
+.btn:focus {outline-style: none;}
